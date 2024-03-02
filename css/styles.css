@@ -16,4 +16,13 @@ img {
 .gallery-item {
     display: block;
     width: calc((100% - 48px) / 3);
-  }
+}
+
+.gallery-item:hover {
+    transform: scale(1.04);
+    transition: transform 200ms;
+}
+
+.gallery-link {
+    cursor: url("../img/cursor.svg"), pointer;
+}
