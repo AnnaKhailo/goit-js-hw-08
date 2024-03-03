@@ -85,7 +85,7 @@ const images = [
 
 function handleModalOpen(event){
     event.preventDefault();
-    if(event.currentTarget === event.target) return;
+    if(!event.target.classList.contains("gallery-image")) return;
     const currentImage = event.target.dataset.source;
 
     const instance = basicLightbox.create(`
